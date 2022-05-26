@@ -3,8 +3,54 @@ languageCode: en-us
 title: PyPOTS
 theme: PaperMod
 
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: Home
+                  url: /
+                  weight: 5
+                - name: About
+                  url: about
+                  weight: 10
+                - name: Publications
+                  url: pubs
+                  weight: 10
+                - name: Docs
+                  url: https://pypots.readthedocs.io
+                - name: Slack
+                  url: https://pypots-dev.slack.com
+
+params:
+    socialIcons:
+        - name: github
+          url: "https://github.com/WenjieDu/PyPOTS"
+        - name: wechat
+          url: "https://raw.githubusercontent.com/WenjieDu/WenjieDu/main/figs/contacts/Wechat_PyPOTS.jpg"
+
+    homeInfoParams:
+        Title: > 
+            A **Py**thon Toolbox for Data Mining on **P**artially-**O**bserved **T**ime **S**eries
+
+        Content: >
+            ⦿ **Motivation:** Due to all kinds of reasons like failure of collection sensors, communication error, and 
+            unexpected malfunction, missing values are common to see in time series from the real-world environment. 
+            This makes partially-observed time series (POTS) a pervasive problem in open-world modeling and prevents 
+            advanced data analysis. Although this problem is important, the area of data mining on POTS still lacks 
+            a dedicated toolkit. PyPOTS is created to fill in this blank.
 
 
-socialIcons:
-    - name: github
-      url: "https://github.com/"
+            ⦿ **Mission:** PyPOTS is born to become a handy toolbox that is going to make data mining on POTS easy rather
+            than tedious, to help engineers and researchers focus more on the core problems in their hands rather than
+            on how to deal with the missing parts in their data. PyPOTS will keep integrating classical and the latest
+            state-of-the-art data mining algorithms for partially-observed multivariate time series. For sure, besides 
+            various algorithms, PyPOTS is going to have unified APIs together with detailed documentation and 
+            interactive examples across algorithms as tutorials.
+
+
+    label:
+         text: "PyPOTS"
+         icon: https://raw.githubusercontent.com/WenjieDu/PyPOTS/main/docs/_static/figs/PyPOTS_logo.svg
+         iconHeight: 36
