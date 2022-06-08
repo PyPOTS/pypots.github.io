@@ -27,6 +27,8 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/WenjieDu/PyPOTS"
+        - name: slack
+          url: "https://pypots-dev.slack.com"
         - name: wechat
           url: "https://raw.githubusercontent.com/WenjieDu/WenjieDu/main/figs/contacts/Wechat_PyPOTS.jpg"
 
@@ -52,5 +54,5 @@ params:
 
     label:
          text: "PyPOTS"
-         icon: https://raw.githubusercontent.com/WenjieDu/PyPOTS/main/docs/_static/figs/PyPOTS_logo.svg
+         icon: /figs/PyPOTS_logo.svg
          iconHeight: 36
