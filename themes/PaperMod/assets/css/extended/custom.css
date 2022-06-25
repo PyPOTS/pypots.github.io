@@ -11,3 +11,17 @@
     line-height: 1.3;
     font-weight: normal;
 }
+
+
+.nav {
+    line-height: 66px;
+}
+
+.logo a {
+    font-size: 40px;
+}
+
+
+#top > header > nav > div.logo > div.logo-switches{
+    margin-left: 20px;
+}

@@ -1,5 +1,5 @@
 ---
-title: "Publications from Our Team"
+title: Papers
 ---
 
 - **[Paper]**
