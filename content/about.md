@@ -11,5 +11,5 @@ markup: HTML
 </div>
 <div align="center" style="width:300px; height:auto; float: left; display:inline; align-items: center;">
         <img width="176px" alt="Photo of Wenjie Du" src="/figs/you.svg">
-    <a href="https://github.com/WenjieDu"> This can be you! </a>
+    <p> This can be you! </p>
 </div>
