@@ -24,6 +24,12 @@ languages:
                   url: https://pypots-dev.slack.com
 
 params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "PyPOTS - A Python Toolbox for Data Mining on Partially-Observed Time Series, https://github.com/WenjieDu/PyPOTS"
+    # author: "Wenjie Du"
+    # ShowShareButtons: true
+    # ShowReadingTime: true
+    ShowCodeCopyButtons: true
     socialIcons:
         - name: github
           url: "https://github.com/WenjieDu/PyPOTS"
@@ -61,3 +67,27 @@ params:
 
     assets:
         favicon: /figs/PyPOTS_logo.svg
+
+    privacy:
+        vimeo:
+            disabled: false
+            simple: true
+
+        twitter:
+            disabled: false
+            enableDNT: true
+            simple: true
+
+        instagram:
+            disabled: false
+            simple: true
+
+        youtube:
+            disabled: false
+            privacyEnhanced: true
+
+    services:
+        instagram:
+            disableInlineCSS: true
+        twitter:
+            disableInlineCSS: true
