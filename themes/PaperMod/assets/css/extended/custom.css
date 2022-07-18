@@ -18,7 +18,7 @@
 }
 
 /* increase the font size of the logo label "PyPOTS" from 24 */
-.logo a {
+#top > header > nav > div.logo > a {
     font-size: 35px;
 }
 
@@ -37,6 +37,7 @@
     margin-top: 30px;
 }
 
+/* the style of the installation button on the home page */
 a.change {
     display: inline-block;
     padding: 0 10px;
@@ -48,17 +49,16 @@ a.change {
 a.change:hover{
     font-size: 115%;
 }
-.download{
+.install{
    margin-top:5px;
 }
-#download-button{
+#install-button{
     color:#FC6423;
     background:#fff;
     border: 2px solid #FC6423;
     opacity:0.5;
 }
-
-#download-button:hover{
+#install-button:hover{
   color:#fff;
   background:#FC6423;
   border: 2px solid #fff;
