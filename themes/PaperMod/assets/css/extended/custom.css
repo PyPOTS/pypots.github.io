@@ -34,33 +34,43 @@
 
 /* move the social icons on the home page down for 30px to make space for the download button */
 #top > main > article.home-info > footer > div.social-icons {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 /* the style of the installation button on the home page */
-a.change {
-    display: inline-block;
-    padding: 0 10px;
-    border: 2px solid #000;
-    border-radius: 2px;
-    transition: all .5s ease;
-    font-weight: 700;
-}
-a.change:hover{
-    font-size: 115%;
-}
-.install{
-   margin-top:5px;
-}
-#install-button{
+.responsive-button{
     color:#FC6423;
     background:#fff;
     border: 2px solid #FC6423;
     opacity:0.5;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 2px;
+    transition: all .5s ease;
+    font-weight: 700;
 }
-#install-button:hover{
-  color:#fff;
-  background:#FC6423;
-  border: 2px solid #fff;
-  opacity:1;
+.responsive-button:hover{
+    color:#fff;
+    background:#FC6423;
+    border: 2px solid #fff;
+    opacity:1;
+    font-size: 115%;
 }
+
+/* the style of the share button on the home page */
+.share-button{
+    color:#FC6423;
+    opacity:0.5;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+    transition: all .5s ease;
+    font-weight: 700;
+}
+.share-button:hover{
+    font-size: 115%;
+    color:#fff;
+    background:#FC6423;
+    opacity:1;
+}
+
