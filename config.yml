@@ -36,7 +36,7 @@ params:
         - name: slack
           url: "https://pypots-dev.slack.com"
         - name: wechat
-          url: "https://raw.githubusercontent.com/WenjieDu/WenjieDu/main/figs/contacts/Wechat_PyPOTS.jpg"
+          url: "https://mp.weixin.qq.com/s/m6j83SJNgz-xySSZd-DTBw"
 
     homeInfoParams:
         Title: > 
