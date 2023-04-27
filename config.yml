@@ -67,7 +67,7 @@ params:
 
     assets:
         favicon: /figs/PyPOTS_logo.svg
-        apple_touch_icon: /figs/PyPOTS_logo.svg
+        apple_touch_icon: https://raw.githubusercontent.com/WenjieDu/PyPOTS/main/docs/_static/figs/PyPOTS_logo.jpg
         safari_pinned_tab: /figs/PyPOTS_logo.svg
 
     privacy:
