@@ -1,5 +1,6 @@
 ---
-title: Papers
+title: Papers from Our Team
+description: "We strongly advocate reproducible research and assure you that our publications here are all open-source in PyPOTS."
 ---
 
 - **[Paper]**
@@ -9,6 +10,7 @@ Expert Systems with Applications, 219:119619, 2023.
 [[DOI Link]](https://doi.org/10.1016/j.eswa.2023.119619)
 [[PDF]](https://arxiv.org/pdf/2202.08516.pdf)
 [[Project Code]](https://github.com/WenjieDu/SAITS)
+`2022 IF: 8.665/JCR-Q1/CAS-Q1(中科院-1区)`
 
 <br>
 
@@ -18,3 +20,4 @@ Forecasting Loss of Signal in Optical Networks with Machine Learning,
 IEEE/OSA Journal of Optical Communications and Networking, vol. 13, no. 10, pp. E109-E121 (2021).
 [[DOI Link]](https://ieeexplore.ieee.org/document/9480370)
 [[PDF]](https://arxiv.org/pdf/2201.07089.pdf)
+`2022 IF: 4.508/JCR-Q1/CAS-Q1(中科院-1区)`

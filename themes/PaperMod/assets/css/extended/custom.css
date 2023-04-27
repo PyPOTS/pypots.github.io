@@ -1,3 +1,16 @@
+:root {
+    --base-scale: calc(100vw / 75);
+    --body-font-size: max(16px, min(20px, calc(var(--base-scale) * 2)));
+    /*--padding-size:max(1em, min(2em, calc(var(--base-scale) * 2)));*/
+    /*--margin-size:max(0.5em, min(2em, calc(var(--base-scale) * 2)));*/
+    /*--border-radius:max(1em, min(3em, calc(var(--base-scale) * 3)));*/
+}
+
+body {
+    font-size: var(--body-font-size);
+    /*font-family: 'Roboto Mono', monospace;*/
+}
+
 /*WDU: only the header on the home page applying lighter font*/
 #top > main > article.home-info > header > h1 {
     font-size: 30px;
@@ -6,10 +19,16 @@
 }
 
 /*WDU: headers on other pages applying normal font */
-#top > main > article > header > h1 {
-    font-size: 30px;
+#top > main > article.post-single > header > h1 {
+    font-size: 24px;
     line-height: 1.3;
     font-weight: normal;
+    margin-top: -10px;
+}
+#top > main > article > header > div.post-description {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: lighter;
 }
 
 
@@ -35,6 +54,7 @@
 /* move the social icons on the home page down for 30px to make space for the download button */
 #top > main > article.home-info > footer > div.social-icons {
     margin-top: 50px;
+    font-size: var(--body-font-size);
 }
 
 /* the style of the installation button on the home page */
