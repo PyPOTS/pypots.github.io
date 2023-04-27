@@ -68,7 +68,7 @@ params:
     assets:
         favicon: /figs/PyPOTS_logo.ico
         apple_touch_icon: /figs/PyPOTS_logo.ico
-        safari_pinned_tab: /figs/PyPOTS_logo.svg
+        safari_pinned_tab: /figs/PyPOTS_logo.ico
 
     privacy:
         vimeo:
