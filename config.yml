@@ -18,10 +18,11 @@ languages:
                 - name: Publications
                   url: pubs
                   weight: 10
+                - name: Blog
+                  url: blog
+                  weight: 10
                 - name: Docs
                   url: https://pypots.readthedocs.io
-                - name: Slack
-                  url: https://pypots-dev.slack.com
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
