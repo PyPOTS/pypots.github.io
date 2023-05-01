@@ -13,7 +13,7 @@
 
 <div class="social-icons">
     <!-- WDU: manually add Community here  -->
-    <a style="font-family: 'Roboto Mono', monospace; margin-top:-10px;">Our community:&nbsp;</a>
+    <a style="font-family: 'Roboto Mono', monospace;">Our community:&nbsp;</a>
     <!-- Done  -->
     {{- range . }}
     <a class="share-button" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">
@@ -66,6 +66,10 @@
             stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
         </svg>
+    </a>
+    <br>
+    <a style="font-family: 'Roboto Mono', monospace; font-size: 14px; margin-top:-20px; line-height: 0;">
+        The links above are for you to quick visit our community on different social platforms and share PyPOTS with your network.
     </a>
     <!-- Done  -->
 </div>
