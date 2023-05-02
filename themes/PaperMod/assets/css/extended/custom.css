@@ -103,3 +103,12 @@ body {
     background:#FC6423;
     opacity:1;
 }
+
+/* make the imgs on the about page be responsive to get enlarged for 120% when the mouse cursor hovers */
+#top > main > article > div > div > div > a.anchor > img{
+    transition: all .8s ease;
+}
+#top > main > article > div > div > div > a.anchor > img:hover{
+    width: 120%;
+    height: 120%;
+}
