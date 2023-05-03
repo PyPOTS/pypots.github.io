@@ -22,7 +22,7 @@ languages:
                   url: blog
                   weight: 10
                 - name: Docs
-                  url: https://pypots.readthedocs.io
+                  url: https://docs.pypots.com
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
