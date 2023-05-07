@@ -112,3 +112,12 @@ body {
     width: 120%;
     height: 120%;
 }
+
+/* adjust the font-size of the footer */
+#top > footer {
+    font-size: 16px;
+}
+/* adjust the font color of the contact email */
+#top > footer > span:nth-child(2) > a {
+    color:#FC6423;
+}
