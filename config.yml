@@ -35,7 +35,7 @@ params:
         - name: github
           url: "https://github.com/WenjieDu/PyPOTS"
         - name: slack
-          url: "https://pypots-dev.slack.com"
+          url: "https://pypots-org.slack.com"
         - name: linkedin
           url: "https://www.linkedin.com/company/pypots"
         - name: wechat

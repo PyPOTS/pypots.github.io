@@ -1,6 +1,7 @@
 :root {
     --base-scale: calc(100vw / 75);
     --body-font-size: max(16px, min(20px, calc(var(--base-scale) * 2)));
+    --footer-height: 50px;
     /*--padding-size:max(1em, min(2em, calc(var(--base-scale) * 2)));*/
     /*--margin-size:max(0.5em, min(2em, calc(var(--base-scale) * 2)));*/
     /*--border-radius:max(1em, min(3em, calc(var(--base-scale) * 3)));*/
@@ -54,7 +55,8 @@ body {
    and make the font size responsive from 16px to 20px
 */
 #top > main > article.home-info > footer > div.social-icons {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: -30px;
     font-size: var(--body-font-size);
 }
 /* adjust all elements under the social-icons div */
