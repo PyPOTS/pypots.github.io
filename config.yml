@@ -96,3 +96,5 @@ params:
             disableInlineCSS: true
         twitter:
             disableInlineCSS: true
+
+    images: ["/figs/PyPOTS_LinkedIn_BG_image.jpg"]
