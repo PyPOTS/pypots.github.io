@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Northwell Alt";
+    src: url("/fonts/Northwell-Alt.woff") format('woff');
+}
+
 :root {
     --base-scale: calc(100vw / 75);
     --body-font-size: max(16px, min(20px, calc(var(--base-scale) * 2)));
@@ -36,9 +41,10 @@ body {
     line-height: 60px;
 }
 
-/* increase the font size of the logo label "PyPOTS" from 24 */
+/* increase the font style of the header "PyPOTS", size from 24 */
 #top > header > nav > div.logo > a {
-    font-size: 35px;
+    font-size: 40px;
+    font-family: "Northwell Alt";
 }
 
 #top > header > nav > div.logo > a > img {
