@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Northwell Alt";
-    src: url("/fonts/Northwell-Alt.woff") format('woff');
+    src: url("/fonts/handwriting-font.woff") format('woff');
 }
 
 :root {
@@ -36,7 +36,6 @@ body {
     font-weight: lighter;
 }
 
-
 .nav {
     line-height: 60px;
 }
@@ -44,6 +43,7 @@ body {
 /* increase the font style of the header "PyPOTS", size from 24 */
 #top > header > nav > div.logo > a {
     font-size: 40px;
+    font-weight: 500;
     font-family: "Northwell Alt";
 }
 
