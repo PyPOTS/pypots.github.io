@@ -1,5 +1,5 @@
-@font-face{
-    font-family: "Northwell Alt";
+@font-face {
+    font-family: "Handwriting";
     src: url("/fonts/handwriting-font.woff") format('woff');
 }
 
@@ -30,6 +30,7 @@ body {
     font-weight: normal;
     margin-top: -10px;
 }
+
 #top > main > article > header > div.post-description {
     font-size: 14px;
     line-height: 1.2;
@@ -44,13 +45,12 @@ body {
 #top > header > nav > div.logo > a {
     font-size: 40px;
     font-weight: 500;
-    font-family: "Northwell Alt";
+    font-family: "Handwriting";
 }
 
 #top > header > nav > div.logo > a > img {
     margin-top: 10px;
 }
-
 
 /* move the theme switch button right for 20px, to make it easier for operation/click */
 #top > header > nav > div.logo > div.logo-switches {
@@ -65,58 +65,65 @@ body {
     margin-bottom: -30px;
     font-size: var(--body-font-size);
 }
+
 /* adjust all elements under the social-icons div */
 #top > main > article.home-info > footer > div.social-icons > * {
     line-height: 2.2;
     margin-right: 0;
 }
+
 /* adjust all svg elements under the social-icons div */
-#top > main > article.home-info > footer > div.social-icons svg{
+#top > main > article.home-info > footer > div.social-icons svg {
     margin-bottom: -5px;
 }
 
 /* the style of the installation button on the home page */
-.responsive-button{
-    color:#FC6423;
-    background:#fff;
+.responsive-button {
+    margin-top: 20px;
+    color: #FC6423;
+    background: #fff;
     border: 2px solid #FC6423;
-    opacity:0.65;
+    opacity: 0.65;
     display: inline-block;
-    padding: 0 10px;
-    border-radius: 2px;
+    padding: 5px 10px;
+    border-radius: 3px;
     transition: all .5s ease;
     font-weight: 700;
+    font-size: 22px;
 }
-.responsive-button:hover{
-    color:#fff;
-    background:#FC6423;
+
+.responsive-button:hover {
+    color: #fff;
+    background: #FC6423;
     border: 2px solid #fff;
-    opacity:1;
-    font-size: 115%;
+    opacity: 1;
+    font-size: 26px;
 }
 
 /* the style of the share button on the home page */
-.share-button{
-    color:#FC6423;
-    opacity:0.65;
+.share-button {
+    color: #FC6423;
+    opacity: 0.65;
     display: inline-block;
     padding: 0 5px;
     border-radius: 2px;
     transition: all .5s ease;
     font-weight: 700;
 }
-.share-button:hover{
+
+.share-button:hover {
     font-size: 130%;
-    color:#fff;
-    background:#FC6423;
-    opacity:1;
+    color: #fff;
+    background: #FC6423;
+    opacity: 1;
 }
 
 /* make the imgs on the about page be responsive to get enlarged for 120% when the mouse cursor hovers */
-#top > main > article > div > div > div > a.anchor > img{
+#top > main > article > div > div > div > a.anchor > img {
     transition: all .8s ease;
 }
-#top > main > article > div > div > div > a.anchor > img:hover{
+
+#top > main > article > div > div > div > a.anchor > img:hover {
     width: 120%;
     height: 120%;
 }
@@ -125,7 +132,8 @@ body {
 #top > footer {
     font-size: 16px;
 }
+
 /* adjust the font color of the contact email */
 #top > footer > span:nth-child(2) > a {
-    color:#FC6423;
+    color: #FC6423;
 }
