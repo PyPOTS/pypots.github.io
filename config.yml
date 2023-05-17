@@ -23,6 +23,8 @@ languages:
                   weight: 10
                 - name: Docs
                   url: https://docs.pypots.com
+                - name: Tutorials
+                  url: https://github.com/WenjieDu/BrewPOTS
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
