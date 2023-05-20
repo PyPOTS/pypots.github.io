@@ -89,7 +89,7 @@ body {
     border-radius: 3px;
     transition: all .5s ease;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .responsive-button:hover {
@@ -97,7 +97,7 @@ body {
     background: #FC6423;
     border: 2px solid #fff;
     opacity: 1;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 /* the style of the share button on the home page */
