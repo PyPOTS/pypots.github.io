@@ -41,7 +41,7 @@ params:
         - name: linkedin
           url: "https://www.linkedin.com/company/pypots"
         - name: wechat
-          url: "https://mp.weixin.qq.com/s/m6j83SJNgz-xySSZd-DTBw"
+          url: "https://mp.weixin.qq.com/s/sNgZmgAyxDn2sZxXoWJYMA"
 
     homeInfoParams:
         Title: > 
