@@ -4,6 +4,17 @@ description: "We strongly advocate reproducible research and assure you that our
 ---
 
 - **[Paper]**
+[Wenjie Du](/about/#WenjieDu).
+PyPOTS: A Python Toolbox for Data Mining on Partially-Observed Time Series.
+arXiv, abs/2305.18811.
+[[DOI Link]](https://doi.org/10.48550/arXiv.2305.18811)
+[[PDF]](https://arxiv.org/pdf/2305.18811.pdf)
+[[Project Code]](https://github.com/WenjieDu/PyPOTS)
+[{{< inTextImg height="22" alt="Citation number on GoogleScholar" url="https://raw.githubusercontent.com/WenjieDu/WenjieDu/main/figs/citation_badges/pypots.svg" >}}]()
+
+<br>
+
+- **[Paper]**
 [Wenjie Du](/about/#WenjieDu), David Cote, Yan Liu.
 SAITS: Self-Attention-based Imputation for Time Series,
 Expert Systems with Applications, 219:119619, 2023.
