@@ -59,7 +59,7 @@ params:
             than tedious, to help engineers and researchers focus more on the core problems in their hands rather than
             on how to deal with the missing parts in their data. PyPOTS will keep integrating classical and the latest
             state-of-the-art data mining algorithms for partially-observed multivariate time series. For sure, besides 
-            various algorithms, PyPOTS is going to have unified APIs together with detailed documentation and 
+            various algorithms, PyPOTS has unified APIs together with detailed documentation and 
             interactive examples across algorithms as tutorials.
 
 
