@@ -137,3 +137,8 @@ body {
 #top > footer > span:nth-child(2) > a {
     color: #FC6423;
 }
+
+#producthunt_badge {
+    width: 250px;
+    margin-top: 50px;
+}
