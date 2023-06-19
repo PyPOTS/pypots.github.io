@@ -142,3 +142,16 @@ body {
     width: 250px;
     margin-top: 50px;
 }
+
+.user_logo {
+    float: left;
+    display: inline;
+    width: 25%;
+    /*margin-right: 5px;*/
+    margin-bottom: 5px;
+}
+
+.user_logo img {
+    width: calc(var(--body-font-size) * 7);
+    border-radius: 50%;
+}
