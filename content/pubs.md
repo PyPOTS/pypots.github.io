@@ -8,7 +8,7 @@ description: "We strongly advocate reproducible research and assure you that our
 PyPOTS: A Python Toolbox for Data Mining on Partially-Observed Time Series,
 arXiv preprint, abs/2305.18811, 2023.
 [[DOI Link]](https://doi.org/10.48550/arXiv.2305.18811)
-[[PDF]](https://arxiv.org/pdf/2202.08516.pdf)
+[[PDF]](https://arxiv.org/pdf/2305.18811.pdf)
 [[Code]](https://github.com/WenjieDu/PyPOTS)
 [{{< inTextImg height="20" alt="Citation number on GoogleScholar" url="https://raw.githubusercontent.com/WenjieDu/WenjieDu/main/figs/citation_badges/pypots.svg" >}}](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9qvUg0AAAAJ&citation_for_view=j9qvUg0AAAAJ:ufrVoPGSRksC)
 
