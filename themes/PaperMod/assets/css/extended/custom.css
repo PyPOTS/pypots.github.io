@@ -151,16 +151,14 @@ body {
     float: left;
     display: inline;
     width: 20%;
-    /*margin-right: 5px;*/
     margin-bottom: 5px;
 }
 
 .user_logo img {
     width: calc(var(--body-font-size) * 7);
-    border-radius: 50%;
 }
 
-
+/* Add the style of announcement banner at the top of the site */
 #announcement {
     display: flex;
     flex-wrap: wrap;
@@ -169,14 +167,20 @@ body {
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
 #announcement *{
+    font-size: var(--body-font-size);
     font-family: "XanhMono";
     color: #FC6423;
-    background-color: #1c1d21;
+    background-color: #1d1e20;
+}
+
+#announcement h3{
+    margin-left: var(--gap);
+    margin-right: var(--gap);
 }
 
 #announcement .link{
