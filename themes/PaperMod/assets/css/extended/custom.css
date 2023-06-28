@@ -169,18 +169,19 @@ body {
     line-height: var(--header-height);
     margin-top: 5px;
     margin-bottom: 10px;
+    background-color: #1d1e20;
 }
 
 #announcement *{
     font-size: var(--body-font-size);
     font-family: "XanhMono";
     color: #FC6423;
-    background-color: #1d1e20;
 }
 
 #announcement h3{
     margin-left: var(--gap);
     margin-right: var(--gap);
+    margin-bottom: 5px;
 }
 
 #announcement .link{
