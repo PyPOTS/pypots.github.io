@@ -65,8 +65,7 @@ body {
    and make the font size responsive from 16px to 20px
 */
 #top > main > article.home-info > footer > div.social-icons {
-    margin-top: 20px;
-    margin-bottom: -30px;
+    margin-top: 30px;
     font-size: var(--body-font-size);
 }
 
@@ -84,9 +83,10 @@ body {
 /* the style of the installation button on the home page */
 .responsive-button {
     margin-top: 20px;
+    margin-bottom: 20px;
     color: #FC6423;
-    background: #fff;
-    border: 2px solid #FC6423;
+    background: #F5F5F5;
+    border: 3px solid #FC6423;
     opacity: 0.65;
     display: inline-block;
     padding: 5px 10px;
@@ -97,9 +97,9 @@ body {
 }
 
 .responsive-button:hover {
-    color: #fff;
+    color: #F5F5F5;
     background: #FC6423;
-    border: 2px solid #fff;
+    border: 2px solid #F5F5F5;
     opacity: 1;
     font-size: 24px;
 }
@@ -117,7 +117,7 @@ body {
 
 .share-button:hover {
     font-size: 130%;
-    color: #fff;
+    color: #F5F5F5;
     background: #FC6423;
     opacity: 1;
 }
