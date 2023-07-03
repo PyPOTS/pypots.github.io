@@ -1,5 +1,5 @@
 ---
-title: Papers from Our Team
+title: Papers from PyPOTS Team
 description: "We strongly advocate reproducible research and assure you that our publications here are all open-source in PyPOTS."
 ---
 
