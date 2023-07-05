@@ -142,20 +142,16 @@ body {
     color: #FC6423;
 }
 
-#producthunt_badge {
-    width: 250px;
-    margin-top: 50px;
-}
-
 .user_logo {
     float: left;
     display: inline;
     width: 20%;
-    margin-bottom: 5px;
 }
 
 .user_logo img {
-    width: calc(var(--body-font-size) * 7);
+    width: max(min(calc(var(--base-scale) * 4), 140px), 65px);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Add the style of announcement banner at the top of the site */
