@@ -11,20 +11,22 @@ languages:
             main:
                 - name: Home
                   url: /
-                  weight: 5
+                  weight: 1
                 - name: About
                   url: about
-                  weight: 10
+                  weight: 2
                 - name: Publications
                   url: pubs
-                  weight: 10
+                  weight: 3
                 - name: Blog
                   url: blog
-                  weight: 10
+                  weight: 5
                 - name: Docs
                   url: https://docs.pypots.com
+                  weight: 6
                 - name: Tutorials
                   url: https://github.com/WenjieDu/BrewPOTS
+                  weight: 7
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
