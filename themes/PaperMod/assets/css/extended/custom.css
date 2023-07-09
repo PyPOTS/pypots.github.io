@@ -122,14 +122,17 @@ body {
     opacity: 1;
 }
 
-/* make the imgs on the about page be responsive to get enlarged for 120% when the mouse cursor hovers */
-#top > main > article > div > div > div > a.anchor > img {
-    transition: all .8s ease;
+.our_avatar_container {
+    height: auto;
+    float: left;
+    display: inline;
+    align-items: center;
+    margin: var(--base-scale);
 }
 
-#top > main > article > div > div > div > a.anchor > img:hover {
-    width: 120%;
-    height: 120%;
+/* make the imgs on the about page be responsive to get enlarged for 120% when the mouse cursor hovers */
+.our_avatar_img > img {
+    width: calc(var(--body-font-size) * 10);
 }
 
 /* adjust the font-size of the footer */
@@ -149,9 +152,11 @@ body {
 }
 
 .user_logo img {
-    width: max(min(calc(var(--base-scale) * 4), 140px), 65px);
+    width: max(min(calc(var(--body-font-size) * 6), 140px), 70px);
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* Add the style of announcement banner at the top of the site */
@@ -182,4 +187,8 @@ body {
 
 #announcement .link{
     text-decoration: underline;
+}
+
+#img-we-are-pypots {
+    width: 80%;
 }
