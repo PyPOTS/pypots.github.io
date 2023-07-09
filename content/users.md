@@ -31,6 +31,12 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
             <img alt="GaTech" src="/figs/user_logos/GeorgiaTech.svg" >
         </a>
     </div>
+    
+    <div class="user_logo">
+        <a target="_blank" href="https://www.ufl.edu/" title="University of Florida">
+            <img alt="UF" src="/figs/user_logos/UF.svg" >
+        </a>
+    </div>
 
     <div class="user_logo">
         <a target="_blank" href="https://english.ucas.ac.cn/" title="University of Chinese Academy of Sciences">
@@ -49,10 +55,10 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
             <img alt="" src="/figs/user_logos/AlanTuring.svg" >
         </a>
     </div>
-
+    
     <div class="user_logo">
-        <a target="_blank" href="https://hkust.edu.hk/" title="Hong Kong University of Science and Technology">
-            <img alt="HKUST" src="/figs/user_logos/HKUST.svg" >
+        <a target="_blank" href="https://www.sysu.edu.cn/sysuen/" title="Sun Yat Sen University">
+            <img alt="SYSU" src="/figs/user_logos/SYSU.svg" >
         </a>
     </div>
 
@@ -61,10 +67,28 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
             <img alt="NTNU" src="/figs/user_logos/NTNU.svg" >
         </a>
     </div>
+    
+    <div class="user_logo">
+        <a target="_blank" href="https://en.szu.edu.cn/" title="Shenzhen University">
+            <img alt="SZU" src="/figs/user_logos/SZU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://hkust.edu.hk/" title="Hong Kong University of Science and Technology">
+            <img alt="HKUST" src="/figs/user_logos/HKUST.svg" >
+        </a>
+    </div>
 
     <div class="user_logo">
         <a target="_blank" href="https://www.korea.edu/mbshome/mbs/en/index.do" title="Korea University">
             <img alt="KU" src="/figs/user_logos/KU.svg" >
+        </a>
+    </div>
+    
+    <div class="user_logo">
+        <a target="_blank" href="https://en.scu.edu.cn/" title="Sichuan University">
+            <img alt="SCU" src="/figs/user_logos/SCU.svg" >
         </a>
     </div>
 
@@ -81,11 +105,16 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
     </div>
 
     <div class="user_logo">
+        <a target="_blank" href="https://www.bupt.edu.cn/" title="Beijing University of Posts and Telecommunications">
+            <img alt="BUPT" src="/figs/user_logos/BUPT.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
         <a target="_blank" href="https://www.tamucc.edu/" title="Texas A&M University-Corpus Christi">
             <img alt="TXAM" src="/figs/user_logos/TXAM.svg" >
         </a>
     </div>
-
 
 
 </div>
@@ -105,6 +134,12 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
         </a>
     </div>
 
+    <div class="user_logo">
+        <a target="_blank" href="http://www.sx.sgcc.com.cn/sgcc/index.html" title="State Grid Corporation of China">
+            <img alt="SGCC" src="/figs/user_logos/SGCC.svg" >
+        </a>
+    </div>
+    
 </div>
 
 <p style="font-family: 'XanhMono'; line-height: 105%; display: inline-block; margin-top: 50px">
