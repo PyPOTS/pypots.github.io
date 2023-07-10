@@ -1,13 +1,20 @@
 ---
 title: "Affiliations of PyPOTS Users"
-description: "The full list of PyPOTS users' affiliations that we know as of 09 July 2023."
+description: "The full list of PyPOTS users' affiliations that we know as of 10 July 2023. We're so proud to have all our awesome users."
 ---
 
 {{< rawhtml >}}
 
 <div style="display: inline-block; width: 100%;">
+
     <h3>Research institutes:</h3>
-    
+
+    <div class="user_logo">
+        <a target="_blank" href="https://www.mit.edu/" title="Massachusetts Institute of Technology">
+            <img alt="MIT" src="/figs/user_logos/MIT.svg" >
+        </a>
+    </div>
+
     <div class="user_logo">
         <a target="_blank" href="https://www.ucla.edu/" title="University of California, Los Angeles">
             <img alt="UCLA" src="/figs/user_logos/UCLA.svg" >
@@ -21,8 +28,26 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
     </div>
 
     <div class="user_logo">
+        <a target="_blank" href="https://www.nyu.edu/" title="New York University">
+            <img alt="NYU" src="/figs/user_logos/NYU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
         <a target="_blank"href="https://en.sjtu.edu.cn/" title="Shanghai Jiao Tong University">
             <img alt="SJTU" src="/figs/user_logos/SJTU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://ethz.ch/en.html/" title="ETH Zürich">
+            <img alt="ETH" src="/figs/user_logos/ETH.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://www.turing.ac.uk/" title="The Alan Turing Institute">
+            <img alt="" src="/figs/user_logos/AlanTuring.svg" >
         </a>
     </div>
 
@@ -41,18 +66,6 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
     <div class="user_logo">
         <a target="_blank" href="https://english.ucas.ac.cn/" title="University of Chinese Academy of Sciences">
             <img alt="UCAS" src="/figs/user_logos/UCAS.svg" >
-        </a>
-    </div>
-
-    <div class="user_logo">
-        <a target="_blank" href="https://ethz.ch/en.html/" title="ETH Zürich">
-            <img alt="ETH" src="/figs/user_logos/ETH.svg" >
-        </a>
-    </div>
-
-    <div class="user_logo">
-        <a target="_blank" href="https://www.turing.ac.uk/" title="The Alan Turing Institute">
-            <img alt="" src="/figs/user_logos/AlanTuring.svg" >
         </a>
     </div>
     
@@ -81,14 +94,14 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
     </div>
 
     <div class="user_logo">
-        <a target="_blank" href="https://www.korea.edu/mbshome/mbs/en/index.do" title="Korea University">
-            <img alt="KU" src="/figs/user_logos/KU.svg" >
-        </a>
-    </div>
-    
-    <div class="user_logo">
         <a target="_blank" href="https://en.scu.edu.cn/" title="Sichuan University">
             <img alt="SCU" src="/figs/user_logos/SCU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://www.korea.edu/mbshome/mbs/en/index.do" title="Korea University">
+            <img alt="KU" src="/figs/user_logos/KU.svg" >
         </a>
     </div>
 
@@ -116,12 +129,17 @@ description: "The full list of PyPOTS users' affiliations that we know as of 09 
         </a>
     </div>
 
-
 </div>
 
 <div style="display: inline-block; width: 100%; margin-top: 1vw;">
     <h3>Industry companies:</h3>
 
+    <div class="user_logo">
+        <a target="_blank" href="https://www.ibm.com/" title="IBM">
+            <img alt="IBM" src="/figs/user_logos/IBM.svg" >
+        </a>
+    </div>
+    
     <div class="user_logo">
         <a target="_blank" href="https://www.huawei.com/en/" title="Huawei Technologies Co., Ltd.">
             <img alt="Huawei" src="/figs/user_logos/Huawei.svg" >
