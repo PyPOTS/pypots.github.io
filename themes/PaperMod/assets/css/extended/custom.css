@@ -155,6 +155,8 @@ body {
     aspect-ratio : 1 / 1;
     width: max(min(calc(var(--body-font-size) * 6), 140px), 70px);
     padding: 1px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 /* Add the style of announcement banner at the top of the site */
