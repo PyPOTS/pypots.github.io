@@ -152,12 +152,9 @@ body {
 }
 
 .user_logo img {
+    aspect-ratio : 1 / 1;
     width: max(min(calc(var(--body-font-size) * 6), 140px), 70px);
-    height: max(min(calc(var(--body-font-size) * 6), 140px), 70px);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 1px;
 }
 
 /* Add the style of announcement banner at the top of the site */
