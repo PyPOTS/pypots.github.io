@@ -1,6 +1,6 @@
 ---
 title: "Affiliations of PyPOTS Users"
-description: "The full list of PyPOTS users' affiliations that we know as of 10 July 2023. We're so proud to have all our awesome users."
+description: "The full list of PyPOTS users' affiliations that we know as of 11 July 2023."
 ---
 
 {{< rawhtml >}}
@@ -26,10 +26,22 @@ description: "The full list of PyPOTS users' affiliations that we know as of 10 
             <img alt="THU" src="/figs/user_logos/THU.svg" >
         </a>
     </div>
+    
+    <div class="user_logo">
+        <a target="_blank" href="https://ethz.ch/en.html/" title="ETH Zürich">
+            <img alt="ETH" src="/figs/user_logos/ETH.svg" >
+        </a>
+    </div>
 
     <div class="user_logo">
         <a target="_blank" href="https://www.nyu.edu/" title="New York University">
             <img alt="NYU" src="/figs/user_logos/NYU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://www.gatech.edu/" title="Georgia Institute of Technology">
+            <img alt="GaTech" src="/figs/user_logos/GeorgiaTech.svg" >
         </a>
     </div>
 
@@ -40,26 +52,20 @@ description: "The full list of PyPOTS users' affiliations that we know as of 10 
     </div>
 
     <div class="user_logo">
-        <a target="_blank" href="https://ethz.ch/en.html/" title="ETH Zürich">
-            <img alt="ETH" src="/figs/user_logos/ETH.svg" >
-        </a>
-    </div>
-
-    <div class="user_logo">
         <a target="_blank" href="https://www.turing.ac.uk/" title="The Alan Turing Institute">
             <img alt="" src="/figs/user_logos/AlanTuring.svg" >
-        </a>
-    </div>
-
-    <div class="user_logo">
-        <a target="_blank" href="https://www.gatech.edu/" title="Georgia Institute of Technology">
-            <img alt="GaTech" src="/figs/user_logos/GeorgiaTech.svg" >
         </a>
     </div>
     
     <div class="user_logo">
         <a target="_blank" href="https://www.ufl.edu/" title="University of Florida">
             <img alt="UF" src="/figs/user_logos/UF.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://www.zju.edu.cn/english/" title="Zhejiang University">
+            <img alt="ZJU" src="/figs/user_logos/ZJU.svg" >
         </a>
     </div>
 
@@ -161,7 +167,8 @@ description: "The full list of PyPOTS users' affiliations that we know as of 10 
 </div>
 
 <p style="font-family: 'XanhMono'; line-height: 105%; display: inline-block; margin-top: 50px">
-Didn't see your affiliation in the list? <br> <br> 
+We're so proud to have all our awesome users. <br> <br>
+Didn't see your affiliation in the list? <br>
 Drop us an email telling how you're using PyPOTS to add your affiliation above.
 </p>
 
