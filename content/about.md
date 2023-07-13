@@ -15,14 +15,16 @@ markup: HTML
 </div>
 
 <h1 style="font-size: 24px;line-height: 1.3;font-weight: 400;margin-bottom: 10px;">All contributors</h1>
-<p style="font-size: 14px;line-height: 1.2;font-weight: lighter;">
-PyPOTS exists thanks to all the nice people who contribute their time to work on the project (including the repositories
-<a href="https://github.com/WenjieDu/PyPOTS/graphs/contributors" target="_blank" style="color: #FC6423">PyPOTS</a>, 
-<a href="https://github.com/WenjieDu/BrewPOTS/graphs/contributors" target="_blank" style="color: #FC6423">BrewPOTS</a>, 
-<a href="https://github.com/WenjieDu/TSDB/graphs/contributors" target="_blank" style="color: #FC6423">TSDB</a>, 
-<a href="https://github.com/WenjieDu/PyCorruptor/graphs/contributors" target="_blank" style="color: #FC6423">PyCorruptor</a>)
-</p>
-<object data="/figs/PyPOTS_contributors.svg"></object>
+<div style="height: 350px;">
+    <p style="font-size: 14px;line-height: 1.2;font-weight: lighter;">
+        PyPOTS exists thanks to all the nice people who contribute their time to work on the project (including the repositories
+        <a href="https://github.com/WenjieDu/PyPOTS/graphs/contributors" target="_blank" style="color: #FC6423">PyPOTS</a>, 
+        <a href="https://github.com/WenjieDu/BrewPOTS/graphs/contributors" target="_blank" style="color: #FC6423">BrewPOTS</a>, 
+        <a href="https://github.com/WenjieDu/TSDB/graphs/contributors" target="_blank" style="color: #FC6423">TSDB</a>, 
+        <a href="https://github.com/WenjieDu/PyCorruptor/graphs/contributors" target="_blank" style="color: #FC6423">PyCorruptor</a>)
+    </p>
+    <object data="/figs/PyPOTS_contributors.svg"></object>
+</div>
 
 
 <div align="center" style="position: absolute; bottom: 20px;">
