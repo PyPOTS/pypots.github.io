@@ -1,6 +1,6 @@
 ---
 title: "Affiliations of PyPOTS Users"
-description: "The full list of PyPOTS users' affiliations that we know as of 11 July 2023."
+description: "The full list of PyPOTS users' affiliations that we know as of 12 July 2023."
 ---
 
 {{< rawhtml >}}
@@ -78,6 +78,12 @@ description: "The full list of PyPOTS users' affiliations that we know as of 11 
     <div class="user_logo">
         <a target="_blank" href="https://www.sysu.edu.cn/sysuen/" title="Sun Yat Sen University">
             <img alt="SYSU" src="/figs/user_logos/SYSU.svg" >
+        </a>
+    </div>
+
+    <div class="user_logo">
+        <a target="_blank" href="https://ev.buaa.edu.cn/" title="Beihang University">
+            <img alt="BUAA" src="/figs/user_logos/BUAA.svg" >
         </a>
     </div>
 
