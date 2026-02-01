@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://pypots.com/users/</loc>
+  </url><url>
+    <loc>https://pypots.com/categories/</loc>
+  </url><url>
+    <loc>https://pypots.com/ecosystem/</loc>
+  </url><url>
+    <loc>https://pypots.com/pubs/</loc>
+  </url><url>
+    <loc>https://pypots.com/blog/</loc>
+  </url><url>
+    <loc>https://pypots.com/stats/</loc>
+  </url><url>
+    <loc>https://pypots.com/</loc>
+  </url><url>
+    <loc>https://pypots.com/tags/</loc>
+  </url>
+</urlset>
