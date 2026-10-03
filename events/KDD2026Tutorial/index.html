@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>PyPOTS - Python Library/Toolbox for Time Series Analysis: Imputation, Forecasting, Classification, Anomaly Detection &amp; Clustering</title>
+<meta name="keywords" content="">
+<meta name="description" content="End-to-End Learning for Partially-Observed Time Series with PyPOTS KDD 2026 Hands-on Tutorial (System-Focused) 📍 Halla A, ICC, Jeju, Korea 🗓️ 1PM - 4PM, Aug 9, 2026 💻 Interactive Colab / Jupyter ⭐ GitHub BrewPOTS Repo 📖 PyPOTS Documentation 📌 Abstract &amp; Overview Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases.">
+<meta name="author" content="">
+<link rel="canonical" href="https://pypots.com/events/KDD2026Tutorial/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c561afacd03ef14af68236128e9aaf6540b04474f03ee2ed547f7d9c92e718f4.css" integrity="sha256-xWGvrNA&#43;8Ur2gjYSjpqvZUCwRHTwPuLtVH99nJLnGPQ=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://pypots.com/figs/pypots_logos/PyPOTS/logo_F5BG.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://pypots.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://pypots.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://pypots.com/figs/pypots_logos/PyPOTS/logo_F5BG.svg">
+<link rel="mask-icon" href="https://pypots.com/figs/pypots_logos/PyPOTS/logo_F5BG.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLYTE74XVR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TLYTE74XVR');
+</script><meta property="og:title" content="" />
+<meta property="og:description" content="End-to-End Learning for Partially-Observed Time Series with PyPOTS KDD 2026 Hands-on Tutorial (System-Focused) 📍 Halla A, ICC, Jeju, Korea 🗓️ 1PM - 4PM, Aug 9, 2026 💻 Interactive Colab / Jupyter ⭐ GitHub BrewPOTS Repo 📖 PyPOTS Documentation 📌 Abstract &amp; Overview Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pypots.com/events/KDD2026Tutorial/" /><meta property="og:image" content="https://pypots.com/figs/pypots_logos/publicity/PyPOTS_LinkedIn_OG_image.jpg"/><meta property="article:section" content="events" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://pypots.com/figs/pypots_logos/publicity/PyPOTS_LinkedIn_OG_image.jpg"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="End-to-End Learning for Partially-Observed Time Series with PyPOTS KDD 2026 Hands-on Tutorial (System-Focused) 📍 Halla A, ICC, Jeju, Korea 🗓️ 1PM - 4PM, Aug 9, 2026 💻 Interactive Colab / Jupyter ⭐ GitHub BrewPOTS Repo 📖 PyPOTS Documentation 📌 Abstract &amp; Overview Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Events",
+      "item": "https://pypots.com/events/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "",
+      "item": "https://pypots.com/events/KDD2026Tutorial/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "End-to-End Learning for Partially-Observed Time Series with PyPOTS KDD 2026 Hands-on Tutorial (System-Focused) 📍 Halla A, ICC, Jeju, Korea 🗓️ 1PM - 4PM, Aug 9, 2026 💻 Interactive Colab / Jupyter ⭐ GitHub BrewPOTS Repo 📖 PyPOTS Documentation 📌 Abstract \u0026amp; Overview Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases.",
+  "keywords": [
+    
+  ],
+  "articleBody": " End-to-End Learning for Partially-Observed Time Series with PyPOTS KDD 2026 Hands-on Tutorial (System-Focused) 📍 Halla A, ICC, Jeju, Korea 🗓️ 1PM - 4PM, Aug 9, 2026 💻 Interactive Colab / Jupyter ⭐ GitHub BrewPOTS Repo 📖 PyPOTS Documentation 📌 Abstract \u0026 Overview Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases.\nThis KDD 2026 Hands-on Tutorial introduces PyPOTS, an open-source Python ecosystem for end-to-end data mining and machine learning on POTS. We present unified workflows covering missingness simulation, data preprocessing, neural modeling, and evaluation across five core tasks: Imputation, Forecasting, Classification, Clustering, and Anomaly Detection.\n🎯 Learning Outcomes \u0026 Target Audience Learning Outcomes By participating in this 3-hour interactive tutorial, attendees will learn how to:\nDeploy PyPOTS to construct automated pipelines for time series with arbitrary missingness mechanisms (MCAR, MAR, MNAR). Benchmark SOTA Models using PyPOTS’s unified APIs across multiple machine learning tasks. Extend PyPOTS Architecture by writing custom neural network backbones, cores, and loss objectives. Follow Open-Source Best Practices to contribute custom algorithms, unit tests, and extensions back to PyPOTS. Target Audience \u0026 Prerequisites Practitioners, Data Scientists, \u0026 Software Engineers: Working with incomplete sensor data and time-series pipelines. Researchers: Developing novel deep learning models for time-series representation and imputation. Prerequisites: Basic knowledge of Python, Jupyter Notebooks, and PyTorch basics. 👨‍🏫 Tutors \u0026 Presenters Biography 🛠️ Tutorial Organizers Wenjie Du Founder of PyPOTS Research Creator and R\u0026D lead of PyPOTS. Focuses on AI systems for time series analysis and real-world ML development.\nYiyuan Yang PhD Student @ University of Oxford, Researcher @ PyPOTS Research Research focuses on intelligent sensing and spatio-temporal data mining. Previously at Tsinghua, Microsoft, Alibaba, and Huawei.\nTianxiang Zhan Researcher @ PyPOTS Research Research interests include time series analysis, information theory, evidence theory, and complex physical systems.\nQingsong Wen Head of AI \u0026 Chief Scientist @ Squirrel Ai Learning, Advisor of PyPOTS Research Published 200+ papers in top venues (KDD, NeurIPS, ICML). Chairs IEEE CIS Task Force on AI for Time Series.\n🎤 On-site Presenter Yinghao Zhu On-site Speaker PhD Student @ The University of Hong Kong Research focuses on AI for Healthcare and reliable time-series learning systems.\n📚 Tutorial Outline \u0026 Curriculum The tutorial is split into two tightly connected parts:\nPart I: Apply PyPOTS to Time Series Analysis (60% Time — Practitioners \u0026 Users) I.1 Problem setup \u0026 POTS fundamentals: Missingness mechanisms (MCAR, MAR, MNAR) and evaluation principles. I.2 Data preparation \u0026 missingness simulation: Dataset loading, splitting, and controlled missingness injection with PyGrinder \u0026 BenchPOTS. I.3 Unified model training: Running SOTA models for imputation, forecasting, classification, clustering, and anomaly detection. I.4 Evaluation \u0026 reproducibility checklist: Metric selection, error analysis, visualization, and reproducible pipeline construction. Part II: Extend PyPOTS to Specialties (40% Time — Developers \u0026 Researchers) II.1 PyPOTS architecture walkthrough: 3-Layer structure (backbone nn/modules, core.py, model.py), 3 integration paths, and 6 task base classes. II.2 Implementing a custom model/module: Step-by-step creation of a custom neural network imputer (CustomTemporalConvImputer) from scratch. II.3 Supporting domain constraints: Handling irregular sampling (deltas), feature-wise masks, and custom domain loss functions (weighted MSE). II.4 Benchmark integration \u0026 testing: Writing unit tests with PyPOTS testing standards (tests//.py) and running fair baseline comparisons. II.5 Open-source workflow \u0026 contribution practice: Black code formatting, NumPy docstrings, pypots-cli dev, and PR contribution guidelines. 📜 Citation If you use PyPOTS or reference this tutorial in your research, please cite our papers:\n@inproceedings{du2026pypotstutorial, title={End-to-End Learning for Partially-Observed Time Series with PyPOTS}, author={Du, Wenjie and Yang, Yiyuan and Zhan, Tianxiang and Wen, Qingsong}, booktitle={Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)}, year={2026} } @article{du2023pypots, title = {{PyPOTS: A Python Toolkit for Data Mining on Partially-Observed Time Series}}, author = {Wenjie Du}, journal = {SIGKDD MiLeTS Workshop}, year = {2023}, } ",
+  "wordCount" : "647",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pypots.com/events/KDD2026Tutorial/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PyPOTS - Python Library/Toolbox for Time Series Analysis: Imputation, Forecasting, Classification, Anomaly Detection \u0026 Clustering",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pypots.com/figs/pypots_logos/PyPOTS/logo_F5BG.svg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+
+    <div id="announcement">
+        <h3>
+            <img class="news_logo" align="center" src="/figs/misc/github.svg"> <a href="https://github.com/WenjieDu/PyPOTS" target="_blank">2K+Stars</a> /
+            <img class="news_logo" align="center" src="/figs/misc/neuralnetwork.svg"> <a href="https://github.com/WenjieDu/PyPOTS#-available-algorithms" target="_blank">50+Models</a> /
+            <img class="news_logo" align="center" src="/figs/misc/pypi.svg"> <a href="/ecosystem" target="_blank">2M+Downloads</a> /
+            <img class="news_logo" align="center" src="/figs/misc/googlescholar.svg"> <a href="/pubs" target="_blank">1K+Citations</a> /
+            <img class="news_logo" align="center" src="/figs/misc/pytorch.svg"> <a href="https://landscape.pytorch.org/?item=modeling--specialized--pypots" target="_blank">PyTorch Ecosystem Member</a>
+        </h3>
+    </div>
+
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://pypots.com" accesskey="h" title="PyPOTS (Alt + H)">
+                <img src="https://pypots.com/figs/pypots_logos/PyPOTS/logo_F5BG.svg" alt="" aria-label="logo"
+                    height="60">PyPOTS</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://pypots.com/" title="Home"
+                
+
+                >
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pypots.com/about" title="About"
+                
+
+                >
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pypots.com/ecosystem" title="Ecosystem"
+                
+
+                >
+                    <span>Ecosystem</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://pypots.com/pubs" title="Pubs/Talks"
+                
+
+                >
+                    <span>Pubs/Talks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.pypots.com" title="Docs/Tutorials"
+                 target="_blank" rel="noopener"
+
+                >
+                    <span>Docs/Tutorials</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://time-series.ai" title="Time-Series.AI"
+                 target="_blank" rel="noopener"
+
+                >
+                    <span>Time-Series.AI</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content">
+<style>
+  /* ── KDD 2026 Tutorial Event Page Design System ── */
+  :root {
+    --kdd-accent: #FC6423;
+    --kdd-accent-hover: #e05316;
+    --kdd-accent-light: rgba(252, 100, 35, 0.06);
+    --kdd-accent-border: rgba(252, 100, 35, 0.25);
+    --kdd-teal: #2d8a75;
+    --kdd-teal-light: rgba(45, 138, 117, 0.06);
+    --kdd-teal-border: rgba(45, 138, 117, 0.25);
+    --kdd-hero-bg: linear-gradient(135deg, rgba(252, 100, 35, 0.07) 0%, rgba(255, 152, 0, 0.03) 100%);
+    --kdd-hero-border: rgba(252, 100, 35, 0.2);
+  }
+
+  .dark {
+    --kdd-accent-light: rgba(252, 100, 35, 0.12);
+    --kdd-accent-border: rgba(252, 100, 35, 0.35);
+    --kdd-teal: #48bfa2;
+    --kdd-teal-light: rgba(72, 191, 162, 0.1);
+    --kdd-teal-border: rgba(72, 191, 162, 0.3);
+    --kdd-hero-bg: linear-gradient(135deg, rgba(252, 100, 35, 0.14) 0%, rgba(30, 30, 32, 0.6) 100%);
+    --kdd-hero-border: rgba(252, 100, 35, 0.35);
+  }
+
+  .tutorial-hero {
+    background: var(--kdd-hero-bg);
+    border: 1px solid var(--kdd-hero-border);
+    border-radius: 12px;
+    padding: 2.2rem 2rem;
+    margin-bottom: 2.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .tutorial-hero h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+
+  .tutorial-subtitle {
+    font-size: 1.05rem;
+    color: var(--secondary);
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+  }
+
+  .tutorial-badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .tutorial-badge {
+    background: var(--kdd-accent-light);
+    border: 1px solid var(--kdd-accent-border);
+    color: var(--kdd-accent);
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-primary-action {
+    background: var(--kdd-accent);
+    color: #ffffff !important;
+    box-shadow: 0 3px 10px rgba(252, 100, 35, 0.25);
+  }
+
+  .btn-primary-action:hover {
+    background: var(--kdd-accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(252, 100, 35, 0.35);
+  }
+
+  .btn-secondary-action {
+    background: var(--entry);
+    color: var(--primary) !important;
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary-action:hover {
+    border-color: var(--kdd-accent);
+    color: var(--kdd-accent) !important;
+    transform: translateY(-1px);
+  }
+
+  /* ── Tutor Cards Vertical List ── */
+  .tutor-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tutor-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.3rem;
+    transition: all 0.25s ease;
+  }
+
+  .tutor-card:hover {
+    border-color: var(--kdd-accent-border);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+
+  .tutor-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--kdd-accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .tutor-title {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    margin-bottom: 0.65rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .tutor-bio {
+    font-size: 0.85rem;
+    color: var(--content);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ── Agenda Curriculum Box ── */
+  .agenda-box {
+    border-left: 4px solid var(--kdd-accent);
+    background: var(--kdd-accent-light);
+    border-radius: 0 8px 8px 0;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .agenda-box.part2 {
+    border-left-color: var(--kdd-teal);
+    background: var(--kdd-teal-light);
+  }
+
+  .agenda-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+  }
+
+  .agenda-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--content);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .agenda-list li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Typography & Headings Hierarchy ── */
+  .post-content h3 {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+  }
+
+  .post-content h4 {
+    font-size: 1.18rem !important;
+    font-weight: 650;
+    margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--kdd-accent);
+  }
+  /* ── Role Subtitles & Presenter Styling ── */
+  .role-subtitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .tutor-card.presenter-card {
+    border-color: var(--kdd-accent-border);
+    background: var(--kdd-accent-light);
+  }
+
+  .role-badge {
+    font-size: 0.75rem;
+    background: var(--kdd-accent);
+    color: #ffffff;
+    padding: 0.15rem 0.55rem;
+    border-radius: 12px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+</style>
+
+<div class="tutorial-hero">
+  <h1>End-to-End Learning for Partially-Observed Time Series with PyPOTS</h1>
+  <div class="tutorial-subtitle">
+    KDD 2026 Hands-on Tutorial (System-Focused)
+  </div>
+  
+  <div class="tutorial-badge-group">
+    <span class="tutorial-badge">📍 Halla A, ICC, Jeju, Korea</span>
+    <span class="tutorial-badge">🗓️ 1PM - 4PM, Aug 9, 2026</span>
+    <span class="tutorial-badge">💻 Interactive Colab / Jupyter</span>
+  </div>
+
+  <div class="btn-group">
+    <a target="_blank" href="https://github.com/WenjieDu/BrewPOTS" class="btn-action btn-primary-action">
+      ⭐ GitHub BrewPOTS Repo
+    </a>
+    <a target="_blank" href="https://docs.pypots.com" class="btn-action btn-secondary-action">
+      📖 PyPOTS Documentation
+    </a>
+  </div>
+</div>
+
+<h3 id="-abstract--overview">📌 Abstract &amp; Overview<a hidden class="anchor" aria-hidden="true" href="#-abstract--overview">#</a></h3>
+<p>Partially-observed time series (POTS) are ubiquitous in real-world applications (IoT sensors, healthcare vitals, industrial monitors, and financial records). However, conventional machine learning toolchains isolate missing-value imputation from downstream predictive modeling, causing error propagation, poor reusability, and fragmented codebases.</p>
+<p>This <strong>KDD 2026 Hands-on Tutorial</strong> introduces <strong>PyPOTS</strong>, an open-source Python ecosystem for end-to-end data mining and machine learning on POTS. We present unified workflows covering missingness simulation, data preprocessing, neural modeling, and evaluation across five core tasks: <strong>Imputation, Forecasting, Classification, Clustering, and Anomaly Detection</strong>.</p>
+<hr>
+<h3 id="-learning-outcomes--target-audience">🎯 Learning Outcomes &amp; Target Audience<a hidden class="anchor" aria-hidden="true" href="#-learning-outcomes--target-audience">#</a></h3>
+<h4 id="learning-outcomes">Learning Outcomes<a hidden class="anchor" aria-hidden="true" href="#learning-outcomes">#</a></h4>
+<p>By participating in this 3-hour interactive tutorial, attendees will learn how to:</p>
+<ol>
+<li><strong>Deploy PyPOTS</strong> to construct automated pipelines for time series with arbitrary missingness mechanisms (MCAR, MAR, MNAR).</li>
+<li><strong>Benchmark SOTA Models</strong> using PyPOTS&rsquo;s unified APIs across multiple machine learning tasks.</li>
+<li><strong>Extend PyPOTS Architecture</strong> by writing custom neural network backbones, cores, and loss objectives.</li>
+<li><strong>Follow Open-Source Best Practices</strong> to contribute custom algorithms, unit tests, and extensions back to PyPOTS.</li>
+</ol>
+<h4 id="target-audience--prerequisites">Target Audience &amp; Prerequisites<a hidden class="anchor" aria-hidden="true" href="#target-audience--prerequisites">#</a></h4>
+<ul>
+<li><strong>Practitioners, Data Scientists, &amp; Software Engineers</strong>: Working with incomplete sensor data and time-series pipelines.</li>
+<li><strong>Researchers</strong>: Developing novel deep learning models for time-series representation and imputation.</li>
+<li><strong>Prerequisites</strong>: Basic knowledge of Python, Jupyter Notebooks, and PyTorch basics.</li>
+</ul>
+<hr>
+<h3 id="-tutors--presenters-biography">👨‍🏫 Tutors &amp; Presenters Biography<a hidden class="anchor" aria-hidden="true" href="#-tutors--presenters-biography">#</a></h3>
+
+<div class="team-group">
+  <div class="role-subtitle" style="margin-top: 1.6rem;">🛠️ Tutorial Organizers</div>
+  <div class="tutor-grid">
+    <div class="tutor-card">
+      <div class="tutor-name">Wenjie Du</div>
+      <div class="tutor-title">Founder of PyPOTS Research</div>
+      <p class="tutor-bio">Creator and R&D lead of PyPOTS. Focuses on AI systems for time series analysis and real-world ML development.</p>
+    </div>
+    <div class="tutor-card">
+      <div class="tutor-name">Yiyuan Yang</div>
+      <div class="tutor-title">PhD Student @ University of Oxford, Researcher @ PyPOTS Research</div>
+      <p class="tutor-bio">Research focuses on intelligent sensing and spatio-temporal data mining. Previously at Tsinghua, Microsoft, Alibaba, and Huawei.</p>
+    </div>
+    <div class="tutor-card">
+      <div class="tutor-name">Tianxiang Zhan</div>
+      <div class="tutor-title">Researcher @ PyPOTS Research</div>
+      <p class="tutor-bio">Research interests include time series analysis, information theory, evidence theory, and complex physical systems.</p>
+    </div>
+    <div class="tutor-card">
+      <div class="tutor-name">Qingsong Wen</div>
+      <div class="tutor-title">Head of AI & Chief Scientist @ Squirrel Ai Learning, Advisor of PyPOTS Research</div>
+      <p class="tutor-bio">Published 200+ papers in top venues (KDD, NeurIPS, ICML). Chairs IEEE CIS Task Force on AI for Time Series.</p>
+    </div>
+  </div>
+  <div class="role-subtitle">🎤 On-site Presenter</div>
+  <div class="tutor-grid">
+    <div class="tutor-card">
+      <div class="tutor-name">Yinghao Zhu <span class="role-badge">On-site Speaker</span></div>
+      <div class="tutor-title">PhD Student @ The University of Hong Kong</div>
+      <p class="tutor-bio">Research focuses on AI for Healthcare and reliable time-series learning systems.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h3 id="-tutorial-outline--curriculum">📚 Tutorial Outline &amp; Curriculum<a hidden class="anchor" aria-hidden="true" href="#-tutorial-outline--curriculum">#</a></h3>
+<p>The tutorial is split into two tightly connected parts:</p>
+
+<div class="agenda-box">
+  <div class="agenda-title">Part I: Apply PyPOTS to Time Series Analysis (60% Time — Practitioners & Users)</div>
+  <ul class="agenda-list">
+    <li><strong>I.1 Problem setup & POTS fundamentals</strong>: Missingness mechanisms (MCAR, MAR, MNAR) and evaluation principles.</li>
+    <li><strong>I.2 Data preparation & missingness simulation</strong>: Dataset loading, splitting, and controlled missingness injection with PyGrinder & BenchPOTS.</li>
+    <li><strong>I.3 Unified model training</strong>: Running SOTA models for imputation, forecasting, classification, clustering, and anomaly detection.</li>
+    <li><strong>I.4 Evaluation & reproducibility checklist</strong>: Metric selection, error analysis, visualization, and reproducible pipeline construction.</li>
+  </ul>
+</div>
+
+<div class="agenda-box part2">
+  <div class="agenda-title" style="color: var(--kdd-teal);">Part II: Extend PyPOTS to Specialties (40% Time — Developers & Researchers)</div>
+  <ul class="agenda-list">
+    <li><strong>II.1 PyPOTS architecture walkthrough</strong>: 3-Layer structure (backbone <code>nn/modules</code>, <code>core.py</code>, <code>model.py</code>), 3 integration paths, and 6 task base classes.</li>
+    <li><strong>II.2 Implementing a custom model/module</strong>: Step-by-step creation of a custom neural network imputer (<code>CustomTemporalConvImputer</code>) from scratch.</li>
+    <li><strong>II.3 Supporting domain constraints</strong>: Handling irregular sampling (<code>deltas</code>), feature-wise masks, and custom domain loss functions (weighted MSE).</li>
+    <li><strong>II.4 Benchmark integration & testing</strong>: Writing unit tests with PyPOTS testing standards (<code>tests/<task>/<model>.py</code>) and running fair baseline comparisons.</li>
+    <li><strong>II.5 Open-source workflow & contribution practice</strong>: Black code formatting, NumPy docstrings, <code>pypots-cli dev</code>, and PR contribution guidelines.</li>
+  </ul>
+</div>
+
+<hr>
+<h3 id="-citation">📜 Citation<a hidden class="anchor" aria-hidden="true" href="#-citation">#</a></h3>
+<p>If you use PyPOTS or reference this tutorial in your research, please cite our papers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#a6e22e">@inproceedings</span>{du2026pypotstutorial,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span>=<span style="color:#e6db74">{End-to-End Learning for Partially-Observed Time Series with PyPOTS}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span>=<span style="color:#e6db74">{Du, Wenjie and Yang, Yiyuan and Zhan, Tianxiang and Wen, Qingsong}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">booktitle</span>=<span style="color:#e6db74">{Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD &#39;26)}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">year</span>=<span style="color:#e6db74">{2026}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#a6e22e">@article</span>{du2023pypots,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">{{PyPOTS: A Python Toolkit for Data Mining on Partially-Observed Time Series}}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">author</span> = <span style="color:#e6db74">{Wenjie Du}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">journal</span> = <span style="color:#e6db74">{SIGKDD MiLeTS Workshop}</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">year</span> = <span style="color:#e6db74">{2023}</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://pypots.com">PyPOTS</a></span>
+    <span>
+        Contact:
+            <a href="https://tinyurl.com/ContactPyPOTS">team at pypots.com</a>
+
+
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
