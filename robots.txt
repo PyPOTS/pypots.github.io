@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pypots.com/sitemap.xml
